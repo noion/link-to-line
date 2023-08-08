@@ -15,4 +15,15 @@
     <applicationListeners>
         <listener class="com.github.noion.linktoline.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+
+    <actions>
+        <action
+                id="EditorBasics.EditorIllustrationAction"
+                class="com.github.noion.linktoline.psi.EditorIllustrationAction"
+                text="Editor Replace Text"
+                description="Replaces selected text with 'Replacement'.">
+                icon="SdkIcons.Sdk_default_icon">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
